@@ -1,16 +1,60 @@
-encriptador-de-texto-alura-challenge
-Se trata de una aplicación que encripta textos, propuesta por Alura LATAM
+<!DOCTYPE html>
 
-Las "llaves" de encriptación que utilizó son las siguientes:
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viwport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stelesheet" href="reset.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap">
+    </head>
 
-La letra "e" es convertida para "enter" La letra "i" es convertida para "imes" La letra "a" es convertida para "ai" La letra "o" es convertida para "ober" La letra "u" es convertida para "ufat"
+    <body>
+        <header>
+            <img src="imagenes/Logo.png" alt="logo alura">
+        </header>
+        <main>
+            
+            <section class="seccion1">
+                <textarea class="area" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="contenedorS"><img src="imagenes/Vector.png" alt="simbolo afirmacion"><p>Solo letras minúsculas y sin acentos.</p></div> 
+                <div class="contenedor-botones">                                                                 
+                    <input type="button" class="btn-encriptar" value="Encriptar">
+                    <input type="button" class="btn-desencriptar" value="Desencriptar">
 
-Requisitos:
 
-Debe funcionar solo con letras minúsculas
-No deben ser utilizados letras con acentos ni caracteres especiales
-Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
-Por ejemplo: "gato" => "gaitober" gaitober" => "gato"
+                </div>
+                
 
-La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
-El resultado debe ser mostrado en la pantalla.
+            </section>
+            <section class="seccion2">
+                <div class="contenedor-munieco">
+                    <img src="imagenes/Muneco.png" alt="nino alura">                    
+                </div>
+                <div class="contenedor-h3">
+                    <h3>Ningún mensaje fue encontrado.</h3>
+                </div>
+                <div class="contenedor-parrafo">
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+
+                <div class="contenedor-resultado">
+                    <h3>Mensaje encriptado</h3>
+                    <p class="texto-resultado"></p>
+
+                </div>
+                <div class="contenedor-copiar">
+                    <input type="button" class="btn-copiar" value="Copiar">
+
+                </div>                
+       
+                   
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">&copy copyright Alura - 2023</p>
+
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
